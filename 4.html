@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+    <link rel="stylesheet" href="4.css">
+</head>
+<body>
+    <div class="div1">
+        <div><h2>Registration Form</h2></div>
+        <form>
+            <label for="fn">First Name* :- 
+            <input type="text"  style="margin-top: 0.6rem;" id="fn">
+        </label> <br>
+            <label for="ln">Last Name* :-
+            <input type="text"  id="ln" style="margin-top: 0.6rem;">
+        </label> <br>
+
+
+
+
+        <label for="">Gender* :- </label>
+        <input type="radio" name="Male" id="r1"   style="margin-top: 0.5rem;">  Male &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Female" id="r2">  Female <br>
+
+
+
+
+        <label for="">Hobbies* :-
+        <input type="checkbox" name="Cricket" id="c1"   style="margin-top: 0.5rem;">  Cricket &nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Singing" id="c2">  Singing&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Dancing" id="c3">  Dancing &nbsp;&nbsp;&nbsp;</label><br>
+
+
+
+        Country :- <select name="Country" id="select"   style="margin-top: 0.5rem;">
+            <option value="Select Country">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+        </form>
+        <div class="op"  style="margin-top: 1rem; cursor: pointer;" onclick="abc()">Validate Fields</div>
+    </div>
+    <div>
+        <h2>Details :- </h2>
+        First Name :- <span id="s1"></span> <br>
+        Last Name :- <span id="s2"></span><br>
+        Gender :- <span id="s3"></span><br>
+        Hobbies :- <span id="s4"></span><br>
+        Country :- <span id="s5"></span><br>
+    </div>
+    <script src="4.js"></script>
+</body>
+</html>

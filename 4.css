@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.div1{
+    width: 40%;
+    margin: 4rem auto;
+    border: 2px solid gray;
+    padding: 1.2rem 1.7rem;
+}
+h2{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.op{
+    border: 2px solid black;
+    background-color: gray;
+    width:fit-content;
+    padding: 0.5rem 0.5rem;
+}

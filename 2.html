@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <h1>2 . When you subscribe it, the information which is entered in the textbox, is displayed on the same page. The text should be in bold.</h1>
+    <hr>
+    <div>
+        <h2>Details <br>
+            E-mail :- <p id="p1"></p>
+            First Name :- <p id="p2"></p>
+            Last Name :- <p id="p3"></p>
+        
+        </h2>
+    </div>
+    <div class="div1">
+        <div class="div2">
+            <h3>SUBSCRIBE TO OUR MAILING LIST</h3>
+            <div>
+                <form>
+                    Email Address<span style="color: red;">*</span> <br>
+                    <input type="email" name="E-mail" id="e1" class="qw"><br>
+                    <span>First Name</span> <br>
+                    <input type="text" name="Name" id="e2" class="qw"><br>
+                    <span>Last Name</span> <br>
+                    <input type="text" name="Name" id="e3" class="qw"><br>
+                    <div class="btn" onclick="abc()" id="btn">Subscribe</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    function abc() {
+      document.getElementById("p1").innerHTML = document.getElementById("e1").value;
+      document.getElementById("p2").innerHTML = document.getElementById("e2").value;
+      document.getElementById("p3").innerHTML = document.getElementById("e3").value;
+    }
+</script>
+</body>
+</html>

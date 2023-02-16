@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <h1>1 :- Create a webpage which has select field. When you change the option , the selected option is displayed in the same page.</h1>
+    <hr>
+    <form>
+        Cricket :-
+        <input type="radio" name="Cricket" id="r1"><br>
+        Football :-
+        <input type="radio" name="Football" id="r2"><br>
+        Volleyball :-
+        <input type="radio" name="Volleyball" id="r3"><br>
+        Kabaddi :-
+        <input type="radio" name="Kabaddi" id="r4"><br>
+        <button  style="margin-top: 1rem;" type="submit" onclick="abc()">Submit</button>
+        <input type="reset" value="Reset">
+    </form>
+    <script>
+    function abc() {
+        var a = document.getElementById("r1").checked;
+        var b = document.getElementById("r2").checked;
+        var c = document.getElementById("r3").checked;
+        var d = document.getElementById("r4").checked;
+        if(a == true){
+            alert("Cricket is Checked");
+        }else if(b == true){
+            alert("Football is Checked");
+        }else if(c == true){
+            alert("Volleyball is Checked");
+        }else if(d == true){
+            alert("Kabaddi is Checked");
+        }
+    }
+    </script>
+</body>
+</html>

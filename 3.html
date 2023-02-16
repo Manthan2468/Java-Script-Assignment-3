@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.div1{
+    width: 100%;
+}
+.div2{
+    width: 40%;
+    margin: 2rem auto;
+    border: 2px solid gray;
+    padding: 2rem 2rem;
+}
+h3{
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: 2rem;
+}
+.div3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btn{
+    padding: 7px 5px;
+    width: 18%;
+}
+    </style>
+</head>
+<body>
+ <div class="div1">
+    <div class="div2">
+<h3>STUDENT DETAILS FORM</h3>
+<div class="div3">
+    <label for="fn">First name:-
+    <input type="text" name="Fname" id="fn">
+</label><br>
+    <label for="ln">Last name:-
+    <input type="text" name="Lname" id="ln">
+</label><br>
+    <label for="ad">Address:-
+    <input type="text" name="address" id="ad">
+</label><br>
+    <label for="fn">Phone no:-
+    <input type="number" name="phoneno" id="pn">
+</label><br>
+
+<input type="submit" onclick="abc()" class="btn"></input>
+</div>
+    </div>
+ </div>   
+
+
+
+ <script>
+function abc() {
+    let a=document.getElementById("ad").value;
+    if (a == "") {
+        alert("Please Enter the address");
+    }
+    let b=document.getElementById("pn").value; 
+    if(b == "" || isNaN(b) || b.length != 10){
+        alert("Please Enter the valid phone No in 10 Digit");
+    }
+    let c=document.getElementById("fn").value; 
+    for (let i = 0; i < c.length; i++) {
+        var p=c.charAt(i);
+        var q=p.charCodeAt(0);
+        if ((q >= 65 && q <= 90) || (q >= 97 && q <= 122)) {
+        }else{
+            
+            alert("Please Enter the first name in only for Alphnumeric Value");
+        }
+    }
+    let d=document.getElementById("ln").value; 
+    for (let i = 0; i < d.length; i++) {
+        var p=d.charAt(i);
+        var q=p.charCodeAt(0);
+        if ((q >= 65 && q <= 90) || (q >= 97 && q <= 122)) {
+        }else{
+            
+            alert("Please Enter  the first name in only for Alphnumeric Value");
+        }
+    }
+}
+ </script>
+</body>
+</html>
